@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 
-function Card(params) {
+function Card(props) {
   return (
     <div className="main-containerr">
       <div className="second-containerr">
         <p className="typee">
-          <b>Type:</b> Balkasurs <br></br>
-          <b>Exp: </b>40
+          <b>Type:</b> {props.type} <br></br>
+          <b>Exp: </b>
+          {props.base_experience}
         </p>
       </div>
       <img
         className="imagee"
-        src="https://i.ibb.co/QfBZZ08/pngguru-com.png"
+        src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${props.img}.png`}
       ></img>
-      <h2 className="pokemon-name">Charmendro</h2>
+      <h2 className="pokemon-name">{props.name}</h2>
     </div>
   );
 }

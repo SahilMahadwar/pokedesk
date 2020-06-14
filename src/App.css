@@ -13,6 +13,7 @@ body {
   text-align: center;
   font-family: "Audiowide", "Metal Mania", cursive;
   font-size: 35px;
+  letter-spacing: 1px;
 }
 
 .main-containerr {
@@ -59,7 +60,7 @@ body {
 .align {
   display: inline-flex;
   flex-wrap: wrap;
-  margin-left: 2.5%;
+  margin-left: 2.6%;
 }
 
 .align > div {
